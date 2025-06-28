@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hairverse.github.io/hairverse/sitemap.xml
