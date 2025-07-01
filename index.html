@@ -3,130 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A complete 50,000+ word essay on Hair in English and Nepali, covering its formation, types, growth, care, and importance." />
-  <meta name="keywords" content="Hair, Essay on Hair, Hair Growth, Types of Hair, Hair Care, Importance of Hair, Nepali, English, Bilingual" />
-  <meta name="author" content="HairVerse" />
-  <title>Complete Essay on Hair - HairVerse</title>
+  <meta name="description" content="Explore the world of hair in both English and Nepali. Learn how hair forms, types, growth, and care methods." />
+  <title>HairVerse: Learn Everything About Hair</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.8;
-      margin: 0;
-      padding: 0 10%;
-      background-color: #fefefe;
+      margin: 0 auto;
+      max-width: 1000px;
+      padding: 20px;
+      line-height: 1.7;
     }
     header {
-      background-color: #343a40;
-      color: white;
       text-align: center;
-      padding: 1.5rem 0;
+      background-color: #1d3557;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
     }
-    .switch-btn {
-      text-align: right;
-      margin: 20px;
+    h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+    .lang-switch {
+      text-align: center;
+      margin-top: 10px;
     }
     button {
-      padding: 8px 16px;
-      background-color: #28a745;
-      color: white;
+      padding: 10px 20px;
+      margin: 5px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-    }
-    img {
-      max-width: 100%;
-      margin: 20px 0;
-      border-radius: 10px;
+      background-color: #2a9d8f;
+      color: white;
+      font-weight: bold;
     }
     .section {
       margin-top: 40px;
     }
-    .nepali {
-      display: none;
-    }
-    footer {
-      background: #343a40;
-      color: white;
-      text-align: center;
-      padding: 1rem 0;
-      margin-top: 60px;
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
     }
   </style>
+  <script>
+    function switchLang(lang) {
+      const all = document.querySelectorAll(".section");
+      all.forEach(sec => {
+        sec.style.display = "none";
+      });
+      document.querySelectorAll(`.${lang}`).forEach(el => {
+        el.style.display = "block";
+      });
+    }
+    window.onload = () => switchLang('en');
+  </script>
 </head>
 <body>
   <header>
-    <h1>HairVerse: Complete Essay on Hair</h1>
+    <h1>HairVerse: Learn Everything About Hair</h1>
+    <div class="lang-switch">
+      <button onclick="switchLang('en')">English</button>
+      <button onclick="switchLang('np')">नेपाली</button>
+    </div>
   </header>
 
-  <div class="switch-btn">
-    <button onclick="switchLanguage()">Switch Language</button>
+  <!-- English Content -->
+  <div class="section en">
+    <h2>1. What is Hair and Its Importance</h2>
+    <p>[Full detailed English explanation starts here... ~10,000+ words]</p>
+
+    <h2>2. How is Hair Formed</h2>
+    <p>[Detailed 10,000+ word explanation of the biological formation of hair]</p>
+    <img src="images/hair-formation.png" alt="Hair Formation Diagram" />
+
+    <h2>3. Types of Hair</h2>
+    <p>[10,000+ words covering all types of body and scalp hair]</p>
+    <img src="images/types-of-hair.png" alt="Types of Hair" />
+
+    <h2>4. How Hair Grows – The Hair Growth Cycle</h2>
+    <p>[Details about anagen, catagen, telogen phases... ~5,000 words]</p>
+
+    <h2>5. Factors Affecting Hair Health</h2>
+    <p>[Explanation of genetics, hormones, diet, stress, etc. ~3,000 words]</p>
+
+    <h2>6. Ways of Caring Hair</h2>
+    <p>[Daily care, Ayurvedic, scientific methods, tips, and home remedies. ~7,000+ words]</p>
+
+    <h2>7. Conclusion</h2>
+    <p>[Wrap-up note on importance of loving and protecting hair]</p>
   </div>
 
-  <main>
-    <div class="english">
-      <section class="section">
-        <h2>1. What is Hair and Its Importance</h2>
-        <p>[Full detailed English explanation starts here... ~10,000+ words]</p>
-      </section>
-      <section class="section">
-        <h2>2. How is Hair Formed</h2>
-        <p>[Detailed 10,000+ word explanation of the biological formation of hair]</p>
-        <img src="images/hair-formation.png" alt="Hair Formation Diagram" />
-      </section>
-      <section class="section">
-        <h2>3. Types of Hair</h2>
-        <p>[10,000+ words covering all types of body and scalp hair]</p>
-        <img src="images/types-of-hair.png" alt="Types of Hair Diagram" />
-      </section>
-      <section class="section">
-        <h2>4. Hair Growth Process</h2>
-        <p>[10,000+ word essay covering anagen, catagen, telogen phases with diagrams]</p>
-        <img src="images/hair-growth-stages.png" alt="Hair Growth Stages" />
-      </section>
-      <section class="section">
-        <h2>5. Ways of Caring for Hair</h2>
-        <p>[Final 10,000+ word content focused on hair care tips, methods, and maintenance]</p>
-      </section>
-    </div>
+  <!-- Nepali Content -->
+  <div class="section np">
+    <h2>१. कपाल के हो र यसको महत्त्व</h2>
+    <p>[विस्तृत नेपाली व्याख्या सुरु हुन्छ यहाँबाट... ~१०,०००+ शब्द]</p>
 
-    <div class="nepali">
-      <section class="section">
-        <h2>१. के हो कपाल र यसको महत्व</h2>
-        <p>[नेपाली भाषामा विस्तृत १०,०००+ शब्दको व्याख्या यहाँबाट सुरु हुन्छ]</p>
-      </section>
-      <section class="section">
-        <h2>२. कपाल कसरी बनिन्छ</h2>
-        <p>[१०,०००+ शब्दको जैविक संरचनाको बारेमा पूर्ण व्याख्या]</p>
-        <img src="images/hair-formation.png" alt="कपाल कसरी बनिन्छ" />
-      </section>
-      <section class="section">
-        <h2>३. कपालका प्रकारहरू</h2>
-        <p>[१०,०००+ शब्दको समावेशी विवरण]</p>
-        <img src="images/types-of-hair.png" alt="कपालका प्रकारहरू" />
-      </section>
-      <section class="section">
-        <h2>४. कपालको वृद्धि प्रक्रिया</h2>
-        <p>[१०,०००+ शब्दको विवरण: एनाजेन, क्याटाजेन, टेलोजेन चरणहरू]</p>
-        <img src="images/hair-growth-stages.png" alt="कपाल बढ्ने चरणहरू" />
-      </section>
-      <section class="section">
-        <h2>५. कपालको हेरचाह गर्ने तरिकाहरू</h2>
-        <p>[अन्तिम १०,०००+ शब्द कपाल संरक्षण र हेरचाहको सुझावहरूमा केन्द्रित]</p>
-      </section>
-    </div>
-  </main>
+    <h2>२. कपाल कसरी बन्छ</h2>
+    <p>[कपालको जैविक संरचना र बन्ने प्रक्रिया को बारेमा १०,०००+ शब्दको व्याख्या]</p>
+    <img src="images/hair-formation.png" alt="कपाल बन्ने प्रक्रिया चित्र" />
 
-  <footer>
-    <p>&copy; 2025 HairVerse. All Rights Reserved.</p>
-  </footer>
+    <h2>३. कपालका प्रकारहरु</h2>
+    <p>[शरिर र टाउकोका सम्पूर्ण कपालको प्रकारहरु ~१०,०००+ शब्द]</p>
+    <img src="images/types-of-hair.png" alt="कपालका प्रकारहरू" />
 
-  <script>
-    function switchLanguage() {
-      const eng = document.querySelector(".english");
-      const nep = document.querySelector(".nepali");
-      eng.style.display = eng.style.display === "none" ? "block" : "none";
-      nep.style.display = nep.style.display === "none" ? "block" : "none";
-    }
-  </script>
+    <h2>४. कपाल कसरी बढ्छ – कपाल वृद्धि चक्र</h2>
+    <p>[एनाजेन, क्याटाजेन, टेलोजेन चरणको विवरण ~५,००० शब्द]</p>
+
+    <h2>५. कपालको स्वास्थ्यमा असर पार्ने तत्वहरू</h2>
+    <p>[अनुवंश, हर्मोन, खानपान, तनाव आदि ~३,००० शब्द]</p>
+
+    <h2>६. कपालको हेरचाहका तरिकाहरु</h2>
+    <p>[दैनिक हेरचाह, आयुर्वेदिक, वैज्ञानिक विधि, सुझाव र घरेलु उपायहरू ~७,०००+ शब्द]</p>
+
+    <h2>७. निष्कर्ष</h2>
+    <p>[कपालको महत्व र यसप्रति माया र सम्मान दर्शाउने निष्कर्षात्मक नोट]</p>
+  </div>
 </body>
 </html>
