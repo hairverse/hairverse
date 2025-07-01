@@ -1,125 +1,94 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore the world of hair in both English and Nepali. Learn how hair forms, types, growth, and care methods." />
-  <title>HairVerse: Learn Everything About Hair</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0 auto;
-      max-width: 1000px;
-      padding: 20px;
-      line-height: 1.7;
-    }
-    header {
-      text-align: center;
-      background-color: #1d3557;
-      color: white;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    h1 {
-      font-size: 2em;
-      margin: 0;
-    }
-    .lang-switch {
-      text-align: center;
-      margin-top: 10px;
-    }
-    button {
-      padding: 10px 20px;
-      margin: 5px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      background-color: #2a9d8f;
-      color: white;
-      font-weight: bold;
-    }
-    .section {
-      margin-top: 40px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 20px auto;
-    }
-  </style>
-  <script>
-    function switchLang(lang) {
-      const all = document.querySelectorAll(".section");
-      all.forEach(sec => {
-        sec.style.display = "none";
-      });
-      document.querySelectorAll(`.${lang}`).forEach(el => {
-        el.style.display = "block";
-      });
-    }
-    window.onload = () => switchLang('en');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HairVerse - Explore the World of Hair</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1000px;
+            background-color: #f5f5f5;
+        }
+        .lang-switch {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            z-index: 999;
+        }
+        .lang-switch button {
+            margin-left: 5px;
+            padding: 8px 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .english, .nepali {
+            display: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>HairVerse: Learn Everything About Hair</h1>
     <div class="lang-switch">
-      <button onclick="switchLang('en')">English</button>
-      <button onclick="switchLang('np')">नेपाली</button>
+        <button onclick="setLanguage('english')">English</button>
+        <button onclick="setLanguage('nepali')">नेपाली</button>
     </div>
-  </header>
 
-  <!-- English Content -->
-  <div class="section en">
-    <h2>1. What is Hair and Its Importance</h2>
-    <p>[Full detailed English explanation starts here... ~10,000+ words]</p>
+    <div class="english">
+        <h1>HairVerse: Learn Everything About Hair</h1>
+        <h2>1. What is Hair and Its Importance</h2>
+        <p><strong>Hair</strong> is a protein filament that grows from follicles found in the dermis. It is one of the defining characteristics of mammals. Hair serves important functions such as protection from UV rays, temperature regulation, and social or cultural identity.</p>
+        <ul>
+            <li><strong>Protection:</strong> Shields the scalp from UV rays and dust.</li>
+            <li><strong>Temperature Regulation:</strong> Helps retain heat in cold weather.</li>
+            <li><strong>Identity:</strong> Contributes to personal appearance and self-expression.</li>
+        </ul>
 
-    <h2>2. How is Hair Formed</h2>
-    <p>[Detailed 10,000+ word explanation of the biological formation of hair]</p>
-    <img src="images/hair-formation.png" alt="Hair Formation Diagram" />
+        <h2>2. How is Hair Formed</h2>
+        <p>Hair formation starts in hair follicles located deep in the dermis. The base of the follicle contains living cells that divide and grow, producing keratin. This keratinized material is pushed upward to form the hair shaft visible above the skin.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Hair_anatomy.jpg/800px-Hair_anatomy.jpg" alt="Hair Formation Diagram">
 
-    <h2>3. Types of Hair</h2>
-    <p>[10,000+ words covering all types of body and scalp hair]</p>
-    <img src="images/types-of-hair.png" alt="Types of Hair" />
+        <h2>3. Types of Hair</h2>
+        <p>There are four main types of human hair: straight, wavy, curly, and coily. Each type has distinct structure and care requirements. Hair types vary by ethnicity, genetics, and even climate exposure.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Hair_types_chart.svg/800px-Hair_types_chart.svg.png" alt="Types of Hair">
+    </div>
 
-    <h2>4. How Hair Grows – The Hair Growth Cycle</h2>
-    <p>[Details about anagen, catagen, telogen phases... ~5,000 words]</p>
+    <div class="nepali">
+        <h1>HairVerse: कपालको संसार</h1>
+        <h2>१. कपाल के हो र यसको महत्त्व</h2>
+        <p><strong>कपाल</strong> एक प्रकारको प्रोटिन केराटिनले बनेको शरीरको रेशा हो जुन डर्मिसको भित्री तहमा हुने फोलिकलबाट उत्पन्न हुन्छ। कपाल स्तनधारी जनावरहरूको एक विशेषता हो। यसको कार्यहरूमा सुरक्षा, ताप नियन्त्रण, र सामाजिक वा सांस्कृतिक पहिचान समावेश छन्।</p>
+        <ul>
+            <li><strong>सुरक्षा:</strong> कपालले टाउकोलाई घामको UV किरण र धुलोबाट जोगाउँछ।</li>
+            <li><strong>तापमान नियन्त्रण:</strong> जाडोमा शरीरको ताप कायम राख्न मद्दत गर्छ।</li>
+            <li><strong>पहिचान:</strong> कपालले हाम्रो रूप र पहिचान व्यक्त गर्न सहयोग गर्छ।</li>
+        </ul>
 
-    <h2>5. Factors Affecting Hair Health</h2>
-    <p>[Explanation of genetics, hormones, diet, stress, etc. ~3,000 words]</p>
+        <h2>२. कपाल कसरी बन्ने गर्छ</h2>
+        <p>कपालको बनावट छालाको भित्री तहमा हुने फोलिकलबाट सुरु हुन्छ। फोलिकलको आधारमा रहेका जीवित कोषहरूले विभाजन र विकास गर्दै केराटिन उत्पादन गर्छन्। यो केराटिन माथि तर्फ धकेलिँदै छालाबाट बाहिर निस्केर कपालको रूप लिन्छ।</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Hair_anatomy.jpg/800px-Hair_anatomy.jpg" alt="कपाल निर्माण प्रक्रिया">
 
-    <h2>6. Ways of Caring Hair</h2>
-    <p>[Daily care, Ayurvedic, scientific methods, tips, and home remedies. ~7,000+ words]</p>
+        <h2>३. कपालका प्रकारहरू</h2>
+        <p>मानव कपालका चार प्रमुख प्रकारहरू छन्: सोझो, तरंगयुक्त, घुर्किएको, र कर्ली। हरेक प्रकारको संरचना फरक हुन्छ र त्यसअनुसार हेरचाहको आवश्यकता पर्छ। कपालको प्रकार जाति, वंशानुगत विशेषता, र मौसममा भर पर्छ।</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Hair_types_chart.svg/800px-Hair_types_chart.svg.png" alt="कपालका प्रकारहरू">
+    </div>
 
-    <h2>7. Conclusion</h2>
-    <p>[Wrap-up note on importance of loving and protecting hair]</p>
-  </div>
-
-  <!-- Nepali Content -->
-  <div class="section np">
-    <h2>१. कपाल के हो र यसको महत्त्व</h2>
-    <p>[विस्तृत नेपाली व्याख्या सुरु हुन्छ यहाँबाट... ~१०,०००+ शब्द]</p>
-
-    <h2>२. कपाल कसरी बन्छ</h2>
-    <p>[कपालको जैविक संरचना र बन्ने प्रक्रिया को बारेमा १०,०००+ शब्दको व्याख्या]</p>
-    <img src="images/hair-formation.png" alt="कपाल बन्ने प्रक्रिया चित्र" />
-
-    <h2>३. कपालका प्रकारहरु</h2>
-    <p>[शरिर र टाउकोका सम्पूर्ण कपालको प्रकारहरु ~१०,०००+ शब्द]</p>
-    <img src="images/types-of-hair.png" alt="कपालका प्रकारहरू" />
-
-    <h2>४. कपाल कसरी बढ्छ – कपाल वृद्धि चक्र</h2>
-    <p>[एनाजेन, क्याटाजेन, टेलोजेन चरणको विवरण ~५,००० शब्द]</p>
-
-    <h2>५. कपालको स्वास्थ्यमा असर पार्ने तत्वहरू</h2>
-    <p>[अनुवंश, हर्मोन, खानपान, तनाव आदि ~३,००० शब्द]</p>
-
-    <h2>६. कपालको हेरचाहका तरिकाहरु</h2>
-    <p>[दैनिक हेरचाह, आयुर्वेदिक, वैज्ञानिक विधि, सुझाव र घरेलु उपायहरू ~७,०००+ शब्द]</p>
-
-    <h2>७. निष्कर्ष</h2>
-    <p>[कपालको महत्व र यसप्रति माया र सम्मान दर्शाउने निष्कर्षात्मक नोट]</p>
-  </div>
+    <script>
+        function setLanguage(lang) {
+            document.querySelector('.english').style.display = lang === 'english' ? 'block' : 'none';
+            document.querySelector('.nepali').style.display = lang === 'nepali' ? 'block' : 'none';
+        }
+        setLanguage('english'); // default
+    </script>
 </body>
 </html>
