@@ -1,87 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HairVerse | Learn About Hair</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HairVerse | What is Hair & Its Importance</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      padding: 20px;
       background-color: #f9f9f9;
       color: #333;
     }
-    h1 {
-      color: #222;
-    }
-    .language-switch {
+    .toggle-btn {
       margin-bottom: 20px;
-    }
-    button {
-      padding: 10px 15px;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: #fff;
       border: none;
       border-radius: 5px;
-      background-color: #007bff;
-      color: white;
-      cursor: pointer;
     }
-    button:hover {
-      background-color: #0056b3;
+    .section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
-    .nepali, .english {
-      display: none;
+    .nepali { display: none; }
+    h2 {
+      color: #444;
     }
   </style>
 </head>
 <body>
 
-  <h1>Explore the World of Hair | कपालको संसार</h1>
+  <button class="toggle-btn" onclick="toggleLanguage()">Switch Language | भाषा परिवर्तन गर्नुहोस्</button>
 
-  <div class="language-switch">
-    <button onclick="toggleLanguage()">Switch to नेपाली / English</button>
+  <div class="section english">
+    <h2>What is Hair and Its Importance?</h2>
+    <p>Hair is a part of our body made of a protein called keratin. It grows from the root under the skin in a tube called a follicle. Hair is not just for style — it also has many important roles.</p>
+    <h3>Importance of Hair:</h3>
+    <ul>
+      <li><strong>Protection:</strong> Hair protects our scalp from sunlight, dust, and pollution.</li>
+      <li><strong>Temperature control:</strong> It helps to keep the head warm in winter.</li>
+      <li><strong>Beauty:</strong> Hair is an important part of our appearance and personality.</li>
+    </ul>
+    <p>Hair helps us look neat, stylish, and clean. Hair comes in different types like straight, curly, or wavy, and knowing your hair type helps you take better care of it.</p>
+    <p>Good hair care includes regular washing, oiling, trimming, and protecting it from heat and dust. Eating healthy food also supports hair growth. Hair can also show signs of your health. If your hair is weak or falling too much, it might mean you need more nutrients or rest.</p>
+    <p>Hair adds confidence and charm. Whether short or long, black or brown, healthy hair always makes us feel good. So, we must care for it with love and attention.</p>
   </div>
 
-  <div class="english">
-    <h2>Essay on Hair</h2>
-    <p>
-      Hair is a part of our body made of a protein called keratin. It grows from follicles under the skin and plays a major role in our appearance, protection, and health. Hair helps to protect our scalp from harmful sun rays, dust, and pollution.
-    </p>
-    <p>
-      In cold seasons, it keeps our head warm and helps control body temperature. It is also a big part of our beauty and identity. Hair comes in many types such as straight, curly, and wavy. Each type requires different care and attention. Good hair hygiene includes regular washing, oiling, trimming, and using mild products.
-    </p>
-    <p>
-      Hair can also reflect our health. Problems like dandruff, dryness, and hair fall can be signs of poor diet or health. So, maintaining healthy hair is very important. Eating fruits, vegetables, drinking water, and reducing stress also help in keeping hair strong.
-    </p>
-    <p>
-      In conclusion, hair is not only for style – it is essential for protection, comfort, beauty, and expressing who we are.
-    </p>
-  </div>
-
-  <div class="nepali">
-    <h2>कपाल सम्बन्धी निबन्ध</h2>
-    <p>
-      कपाल हाम्रो शरीरको एक महत्वपूर्ण भाग हो जुन केराटिन नामक प्रोटिनबाट बनेको हुन्छ। यो छालामुनिको फोलिकलबाट उम्रन्छ र हाम्रो सौन्दर्य, सुरक्षामा तथा स्वास्थ्यमा ठूलो भूमिका खेल्दछ। कपालले टाउकोलाई घाम, धुलो, र प्रदूषणबाट जोगाउँछ।
-    </p>
-    <p>
-      जाडो मौसममा यसले टाउकोलाई न्यानो राख्न मद्दत गर्दछ र शरीरको तापक्रम नियन्त्रण गर्छ। कपाल हाम्रो पहिचान र व्यक्तित्वको पनि महत्त्वपूर्ण हिस्सा हो। कपाल सीधा, घुमीएको, वा लहरदार जस्ता विभिन्न प्रकारका हुन्छन्। प्रत्येक प्रकारको कपालको लागि छुट्टै स्याहार आवश्यक पर्छ।
-    </p>
-    <p>
-      राम्रो कपालको लागि नियमित धुनु, तेल लगाउनु, काट्नु, र सौम्य उत्पादन प्रयोग गर्नु आवश्यक हुन्छ। कपालको स्वास्थ्य हाम्रो शरीरको स्थिति पनि देखाउँछ। ड्यान्ड्रफ, सुख्खापन, झर्नु आदि समस्याहरू अस्वस्थ खानपान र तनावका कारण हुन सक्छन्।
-    </p>
-    <p>
-      अन्त्यमा, कपाल केवल शोभाका लागि नभएर सुरक्षाको, आरामको, सौन्दर्यको र व्यक्तित्वको अभिव्यक्तिको लागि पनि अत्यन्त महत्त्वपूर्ण हुन्छ।
-    </p>
+  <div class="section nepali">
+    <h2>कपाल के हो र यसको महत्व?</h2>
+    <p>कपाल हाम्रो शरीरको एक भाग हो जुन केराटिन भन्ने प्रोटिनबाट बनेको हुन्छ। यो छालामुनि भएको जराबाट उम्रन्छ जुन फलिकुल भन्ने नलीमा हुन्छ। कपाल केवल शोभाका लागि मात्र होइन — यसका धेरै महत्त्वपूर्ण भूमिका छन्।</p>
+    <h3>कपालको महत्व:</h3>
+    <ul>
+      <li><strong>सुरक्षा:</strong> कपालले टाउकोलाई घाम, धुलो र प्रदूषणबाट जोगाउँछ।</li>
+      <li><strong>तापमान नियन्त्रण:</strong> जाडोमा टाउकोलाई न्यानो राख्न मद्दत गर्छ।</li>
+      <li><strong>सौन्दर्य:</strong> कपाल हाम्रो सुन्दरता र व्यक्तित्वको भाग हो।</li>
+    </ul>
+    <p>कपालले हामीलाई सफा, स्टाइलिश र चिटिक्क देखाउन सहयोग गर्छ। कपाल सीधा, घुम्रिएको वा छालजस्तै प्रकारको हुन सक्छ र आफ्नो कपालको प्रकार बुझेर त्यसको राम्रो हेरचाह गर्न सकिन्छ।</p>
+    <p>कपालको हेरचाहमा नियमित रूपमा धुने, तेल लगाउने, छाँटकाँट गर्ने र तातो वा धुलोबाट जोगाउने समावेश हुन्छ। स्वस्थ खानाले पनि कपालको वृद्धि राम्रो हुन्छ। कपालले हाम्रो स्वास्थ्यको सङ्केत पनि दिन सक्छ। यदि कपाल कमजोर छ वा धेरै झर्दैछ भने पोषण वा आरामको कमी हुन सक्छ।</p>
+    <p>कपालले आत्मविश्वास र आकर्षण बढाउँछ। छोटो होस् या लामो, कालो होस् या खैरो — स्वस्थ कपालले हामीलाई सधैँ राम्रो महसुस गराउँछ। त्यसैले हामीले माया र ध्यानका साथ यसको हेरचाह गर्नुपर्छ।</p>
   </div>
 
   <script>
-    let showingEnglish = true;
-    document.querySelector(".english").style.display = "block";
-
     function toggleLanguage() {
-      showingEnglish = !showingEnglish;
-      document.querySelector(".english").style.display = showingEnglish ? "block" : "none";
-      document.querySelector(".nepali").style.display = showingEnglish ? "none" : "block";
+      const eng = document.querySelector('.english');
+      const nep = document.querySelector('.nepali');
+      eng.style.display = eng.style.display === 'none' ? 'block' : 'none';
+      nep.style.display = nep.style.display === 'none' ? 'block' : 'none';
     }
+    // Start with English shown
+    document.querySelector('.english').style.display = 'block';
+    document.querySelector('.nepali').style.display = 'none';
   </script>
 
 </body>
