@@ -3,75 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HairVerse | Learn About Hair in Nepali & English</title>
-  <meta name="description" content="Explore all about hair types, care, and importance in Nepali and English.">
+  <title>HairVerse | Learn About Hair</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 20px;
+      margin: 20px;
       background-color: #f9f9f9;
-      color: #222;
-      line-height: 1.8;
-    }
-    h1, h2 {
       color: #333;
     }
-    .section {
-      margin-bottom: 40px;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    h1 {
+      color: #222;
     }
-    ul {
-      padding-left: 20px;
+    .language-switch {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .nepali, .english {
+      display: none;
     }
   </style>
 </head>
 <body>
+
   <h1>Explore the World of Hair | कपालको संसार</h1>
-  <p>Welcome to HairVerse! Learn about hair in both English and Nepali — from its meaning to different types and how to care for it.</p>
 
-  <div class="section">
-    <h2>1. What is Hair and Its Importance | कपाल के हो?</h2>
-    <p><strong>Hair</strong> is a part of our body made of a protein called keratin. It grows from the root under the skin in a tube called a follicle. Hair is not just for style — it also has many important roles.</p>
-    <p><strong>Importance of Hair:</strong></p>
-    <ul>
-      <li><strong>Protection:</strong> Hair protects our scalp from sunlight, dust, and pollution.</li>
-      <li><strong>Temperature control:</strong> It helps to keep the head warm in winter.</li>
-      <li><strong>Beauty:</strong> Hair is an important part of our appearance and personality.</li>
-    </ul>
-    <p><strong>कपाल</strong> हाम्रो शरीरको एक भाग हो जुन केराटिन भन्ने प्रोटिनबाट बनेको हुन्छ। यो छालाभित्रको जराबाट उम्रिन्छ। कपाल केवल शोभा होइन, यसको उपयोगिता पनि धेरै छ।</p>
-    <p><strong>कपालको महत्व:</strong></p>
-    <ul>
-      <li><strong>सुरक्षा:</strong> कपालले टाउकोलाई घाम, धुलो, र प्रदूषणबाट जोगाउँछ।</li>
-      <li><strong>तातोपन नियन्त्रण:</strong> जाडोमा टाउकोलाई न्यानो राख्न मद्दत गर्छ।</li>
-      <li><strong>सौन्दर्य:</strong> कपाल हाम्रो सुन्दरता र व्यक्तित्वको भाग हो।</li>
-    </ul>
+  <div class="language-switch">
+    <button onclick="toggleLanguage()">Switch to नेपाली / English</button>
   </div>
 
-  <div class="section">
-    <h2>2. Types of Hair | कपालका प्रकारहरू</h2>
-    <p>Not everyone has the same type of hair. Knowing your hair type helps you take better care of it.</p>
-    <ul>
-      <li><strong>Straight Hair (सिधा कपाल):</strong> This hair type is flat and smooth. It is often shiny but can become oily quickly. <br> <em>सिधा कपाल सीधा र चम्किलो देखिन्छ, तर छिट्टै चिल्लो हुनसक्छ।</em></li>
-      <li><strong>Wavy Hair (तरंगिएको कपाल):</strong> It has gentle waves in "S" shape. It is between straight and curly. <br> <em>यसमा S आकारको तरंग हुन्छ। न त सीधा, न त धेरै घुमिएको।</em></li>
-      <li><strong>Curly Hair (घुमिएको कपाल):</strong> Curls are tight or spiral. It looks voluminous and is often dry. <br> <em>घुमिएको कपाल प्राय: सुक्खा हुन्छ र घुम्टिएर आउने गर्छ।</em></li>
-    </ul>
+  <div class="english">
+    <h2>Essay on Hair</h2>
+    <p>
+      Hair is a part of our body made of a protein called keratin. It grows from follicles under the skin and plays a major role in our appearance, protection, and health. Hair helps to protect our scalp from harmful sun rays, dust, and pollution.
+    </p>
+    <p>
+      In cold seasons, it keeps our head warm and helps control body temperature. It is also a big part of our beauty and identity. Hair comes in many types such as straight, curly, and wavy. Each type requires different care and attention. Good hair hygiene includes regular washing, oiling, trimming, and using mild products.
+    </p>
+    <p>
+      Hair can also reflect our health. Problems like dandruff, dryness, and hair fall can be signs of poor diet or health. So, maintaining healthy hair is very important. Eating fruits, vegetables, drinking water, and reducing stress also help in keeping hair strong.
+    </p>
+    <p>
+      In conclusion, hair is not only for style – it is essential for protection, comfort, beauty, and expressing who we are.
+    </p>
   </div>
 
-  <div class="section">
-    <h2>3. Ways of Caring Hair | कपाल जोगाउने तरिकाहरू</h2>
-    <p>Hair care is important to keep your hair healthy, strong, and beautiful.</p>
-    <ul>
-      <li><strong>Use a gentle shampoo:</strong> Wash your hair with a mild shampoo twice or thrice a week. <br> <em>हल्का श्याम्पु प्रयोग गरी हप्ता २-३ पटक कपाल धोउनुस्।</em></li>
-      <li><strong>Oil your hair:</strong> Apply natural oil like coconut or mustard oil. <br> <em>नारिवल वा तोरीको तेल लगाउनु लाभदायक हुन्छ।</em></li>
-      <li><strong>Avoid too much heat:</strong> Don’t use dryers or straighteners too often. <br> <em>ड्रायर वा स्ट्रेटनर बढी प्रयोग नगर्नुस्।</em></li>
-      <li><strong>Eat healthy food:</strong> Include fruits, vegetables, and proteins in your diet. <br> <em>फलफूल, सागसब्जी, प्रोटिनयुक्त खाना खाँदा कपाल बलियो हुन्छ।</em></li>
-      <li><strong>Trim regularly:</strong> Trim your hair every few months to remove split ends. <br> <em>फाटेका पुछार हटाउन २-३ महिनामा एकपटक काट्नुस्।</em></li>
-    </ul>
+  <div class="nepali">
+    <h2>कपाल सम्बन्धी निबन्ध</h2>
+    <p>
+      कपाल हाम्रो शरीरको एक महत्वपूर्ण भाग हो जुन केराटिन नामक प्रोटिनबाट बनेको हुन्छ। यो छालामुनिको फोलिकलबाट उम्रन्छ र हाम्रो सौन्दर्य, सुरक्षामा तथा स्वास्थ्यमा ठूलो भूमिका खेल्दछ। कपालले टाउकोलाई घाम, धुलो, र प्रदूषणबाट जोगाउँछ।
+    </p>
+    <p>
+      जाडो मौसममा यसले टाउकोलाई न्यानो राख्न मद्दत गर्दछ र शरीरको तापक्रम नियन्त्रण गर्छ। कपाल हाम्रो पहिचान र व्यक्तित्वको पनि महत्त्वपूर्ण हिस्सा हो। कपाल सीधा, घुमीएको, वा लहरदार जस्ता विभिन्न प्रकारका हुन्छन्। प्रत्येक प्रकारको कपालको लागि छुट्टै स्याहार आवश्यक पर्छ।
+    </p>
+    <p>
+      राम्रो कपालको लागि नियमित धुनु, तेल लगाउनु, काट्नु, र सौम्य उत्पादन प्रयोग गर्नु आवश्यक हुन्छ। कपालको स्वास्थ्य हाम्रो शरीरको स्थिति पनि देखाउँछ। ड्यान्ड्रफ, सुख्खापन, झर्नु आदि समस्याहरू अस्वस्थ खानपान र तनावका कारण हुन सक्छन्।
+    </p>
+    <p>
+      अन्त्यमा, कपाल केवल शोभाका लागि नभएर सुरक्षाको, आरामको, सौन्दर्यको र व्यक्तित्वको अभिव्यक्तिको लागि पनि अत्यन्त महत्त्वपूर्ण हुन्छ।
+    </p>
   </div>
 
-  <p><em>Created by Prasad Regmi — Class 2, Srinolav Abhishek Wadding School</em></p>
+  <script>
+    let showingEnglish = true;
+    document.querySelector(".english").style.display = "block";
+
+    function toggleLanguage() {
+      showingEnglish = !showingEnglish;
+      document.querySelector(".english").style.display = showingEnglish ? "block" : "none";
+      document.querySelector(".nepali").style.display = showingEnglish ? "none" : "block";
+    }
+  </script>
+
 </body>
 </html>
